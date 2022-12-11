@@ -165,10 +165,10 @@ function getYTurl($videoid) {
 
   $response = curl_exec($curl);
   curl_close($curl);
-  $array = [];
-  parse_str($response, $array);
-  $json = $array['player_response'];
-  $jsonObj = json_decode($json, true);
+  //$array = [];
+  //parse_str($response, $array);
+  //$json = $array['player_response'];
+  $jsonObj = json_decode($response, true);
   return $jsonObj['streamingData']['hlsManifestUrl'];
   
 }
