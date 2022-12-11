@@ -1,0 +1,26 @@
+#EXTINF:-1 tvg-id="tv.france24" tvg-logo="https://main.mzmediahost.com/wp-content/uploads/2015/10/Logos_FRANCE24_RVB_2013.svg_.png" group-title="News",France24 FR
+http://f24hls-i.akamaihd.net/hls/live/221146/F24_FR_HI_HLS/master_2000.m3u8
+
+#EXTINF:-1 tvg-id="tv.france24en" tvg-logo="https://main.mzmediahost.com/wp-content/uploads/2015/10/Logos_FRANCE24_RVB_2013.svg_.png" group-title="News",France24 EN
+http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
+
+#EXTINF:-1 tvg-id="tv.tv5monde" tvg-logo="https://logosolusa.com/wp-content/uploads/parser/TV5-Monde-Logo-1.png" group-title="France",TV5 Monde
+http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/index.m3u8
+
+#EXTINF:-1 tvg-id="tv.bloomberg-asia" tvg-logo="https://www.conviva.com/wp-content/uploads/2019/12/Bloomberg-logo-.png" group-title="News",Bloomberg Asia
+http://cdn-videos.akamaized.net/btv/desktop/akamai/asia/live/primary.m3u8
+
+#EXTINF:-1 tvg-id="tv.bloomberg-europe" tvg-logo="https://www.conviva.com/wp-content/uploads/2019/12/Bloomberg-logo-.png" group-title="News",Bloomberg Europe
+http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8
+
+#EXTINF:-1 tvg-id="tv.nbcnews" tvg-logo="https://i.ya-webdesign.com/images/nbc-news-logo-png-1.png" group-title="News",NBC News
+http://161.0.157.50/PLTV/88888888/224/3221227040/03.m3u8
+
+#EXTINF:-1 tvg-id="tv.newsmax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6e/Newsmax_TV_Logo.png" group-title="News",Newsmax
+https://nmxlive.akamaized.net/hls/live/529965/Live_1/master.m3u8
+
+#EXTINF:-1 tvg-id="tv.weather" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/d0/0b/1d/d00b1d4f-9ce1-3cd9-d7b6-43fb7cbabc47/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png" group-title="Documentaries",The Weather Channel
+http://weather-lh.akamaihd.net/i/twc_1@92006/index_2400_av-p.m3u8
+
+#EXTINF:-1 tvg-id="tv.axn" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6e/Axn_global.png" group-title="Entertainment",AXN
+http://210.210.155.35/session/e436e198-65ba-11e9-994b-b82a72d63267/uq2663/h/h141/01.m3u8
