@@ -152,11 +152,11 @@ function getYTurl($videoid) {
       "clientName": "WEB",
       "clientVersion": "2.20210721.00.00",
       "mainAppWebInfo": {
-          "graftUrl": "/watch?v=$videoid"
+          "graftUrl": "/watch?v='.$videoid.'"
       }
      }
     },
-    "videoId": "$videoid"
+    "videoId": "'.$videoid.'"
   }',
     CURLOPT_HTTPHEADER => array(
       'Content-Type: application/json'
