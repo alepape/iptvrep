@@ -137,14 +137,30 @@ function getYTurl($videoid) {
   $curl = curl_init();
 
   curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://www.youtube.com/get_video_info?video_id='.$videoid,
+    CURLOPT_URL => 'https://youtubei.googleapis.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
     CURLOPT_TIMEOUT => 0,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    CURLOPT_CUSTOMREQUEST => 'GET',
+    CURLOPT_CUSTOMREQUEST => 'POST',
+    CURLOPT_POSTFIELDS =>'{
+   "context": {
+     "client": {
+      "hl": "en",
+      "clientName": "WEB",
+      "clientVersion": "2.20210721.00.00",
+      "mainAppWebInfo": {
+          "graftUrl": "/watch?v=$videoid"
+      }
+     }
+    },
+    "videoId": "$videoid"
+  }',
+    CURLOPT_HTTPHEADER => array(
+      'Content-Type: application/json'
+    ),
   ));
 
   $response = curl_exec($curl);
