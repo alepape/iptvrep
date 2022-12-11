@@ -6,7 +6,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 ini_set('display_errors', 'On');
 
 $actual_link = $_SERVER['HTTP_HOST'] . substr($_SERVER['REQUEST_URI'], 0, strrpos($_SERVER['REQUEST_URI'], "/"));
-$static_url = $actual_link."/static.mp4\r\n\r\n";
+$static_url = "http://".$actual_link."/static.mp4\r\n\r\n";
 
 class Channel {
 
