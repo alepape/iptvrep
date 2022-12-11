@@ -5,6 +5,9 @@ header('Content-Type: text/plain; charset=utf-8');
 error_reporting(E_ALL & ~E_NOTICE);
 ini_set('display_errors', 'On');
 
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$static_url = $actual_link."/static.mp4\r\n\r\n";
+
 class Channel {
 
     public $tvg_id;
@@ -111,8 +114,9 @@ function generate_output($config) {
 }
 
 function youtube($config) {
+  global $static_url;
   $cleaned_output = "\r\n".'#EXTINF:-1 group-title="+ '.$config['title'].'",+ '.$config['title']."\r\n";
-  $cleaned_output .= $static;
+  $cleaned_output .= $static_url;
 
   for ($x = 0; $x < count($config['youtube']); $x++) {
     $ytvideo = $config['youtube'][$x];
@@ -154,6 +158,7 @@ function getYTurl($videoid) {
 }
 
 function local_src($config) {
+    global $static_url;
     $result = file_get_contents($config['file']);
     // TODO: cleanup, remove empty lines, check EPG?
 
@@ -166,7 +171,7 @@ function local_src($config) {
     }
 
     $cleaned_output = "\r\n".'#EXTINF:-1 group-title="+ '.$config['title'].'",+ '.$config['title']."\r\n";
-    $cleaned_output .= $static;
+    $cleaned_output .= $static_url;
 
     $std_array = explode("\n", $output);
     for ($x = 0; $x <= count($std_array); $x++) {
@@ -182,7 +187,7 @@ function local_src($config) {
 }
 
 function remote_src($config) {
-
+  global $static_url;
 	$curl = curl_init();
 	
 	curl_setopt_array($curl, array(
@@ -210,7 +215,7 @@ function remote_src($config) {
 
     // TODO: should be done in keep and remove fcts...
     $cleaned_output = "\r\n".'#EXTINF:-1 group-title="+ '.$config['title'].'",+ '.$config['title']."\r\n";
-    $cleaned_output .= $static;
+    $cleaned_output .= $static_url;
 
     $std_array = explode("\n", $output);
     for ($x = 0; $x <= count($std_array); $x++) {
@@ -333,9 +338,6 @@ function test_url($URL) {
     return false;
   }
 }
-
-$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$static = $actual_link."/static.mp4\r\n\r\n";
 
 // configuration
 $configurations = array();
