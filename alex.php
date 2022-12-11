@@ -5,9 +5,6 @@ header('Content-Type: text/plain; charset=utf-8');
 error_reporting(E_ALL & ~E_NOTICE);
 ini_set('display_errors', 'On');
 
-$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$static = $actual_link."/static.mp4\r\n\r\n";
-
 class Channel {
 
     public $tvg_id;
@@ -115,7 +112,7 @@ function generate_output($config) {
 
 function youtube($config) {
   $cleaned_output = "\r\n".'#EXTINF:-1 group-title="+ '.$config['title'].'",+ '.$config['title']."\r\n";
-  $cleaned_output .= "http://192.168.1.29:8080/static.mp4\r\n\r\n";
+  $cleaned_output .= $static;
 
   for ($x = 0; $x < count($config['youtube']); $x++) {
     $ytvideo = $config['youtube'][$x];
@@ -169,7 +166,7 @@ function local_src($config) {
     }
 
     $cleaned_output = "\r\n".'#EXTINF:-1 group-title="+ '.$config['title'].'",+ '.$config['title']."\r\n";
-    $cleaned_output .= "http://192.168.1.29:8080/static.mp4\r\n\r\n";
+    $cleaned_output .= $static;
 
     $std_array = explode("\n", $output);
     for ($x = 0; $x <= count($std_array); $x++) {
@@ -213,7 +210,7 @@ function remote_src($config) {
 
     // TODO: should be done in keep and remove fcts...
     $cleaned_output = "\r\n".'#EXTINF:-1 group-title="+ '.$config['title'].'",+ '.$config['title']."\r\n";
-    $cleaned_output .= "http://192.168.1.29:8080/static.mp4\r\n\r\n";
+    $cleaned_output .= $static;
 
     $std_array = explode("\n", $output);
     for ($x = 0; $x <= count($std_array); $x++) {
@@ -336,6 +333,9 @@ function test_url($URL) {
     return false;
   }
 }
+
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$static = $actual_link."/static.mp4\r\n\r\n";
 
 // configuration
 $configurations = array();
