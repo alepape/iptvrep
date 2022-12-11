@@ -5,7 +5,8 @@ header('Content-Type: text/plain; charset=utf-8');
 error_reporting(E_ALL & ~E_NOTICE);
 ini_set('display_errors', 'On');
 
-$static = "http://192.168.1.29:8080/static.mp4\r\n\r\n";
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$static = $actual_link."/static.mp4\r\n\r\n";
 
 class Channel {
 
