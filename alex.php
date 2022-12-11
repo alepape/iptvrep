@@ -355,11 +355,11 @@ $yt = array(
 );
 // title, logo, videoID
 $yt["youtube"] = array(
-  array("Euronews", "", "sPgqEHsONK8"),
+  array("Euronews", "", "ntmPIzlkcJk"),
   array("NBC News", "", "q2hcCya5TE4"),
   array("ABC News", "", "w_Ma8oQLmSM"),
-  array("DW News", "", "qMtcWqCL_UQ"),
-  array("LoFi Girl", "", "5qap5aO4i9A")
+  array("DW News", "", "ammKkVgtIHw"),
+  array("LoFi Girl", "", "jfKfPfyJRdk")
 );
 
 $main = array(
