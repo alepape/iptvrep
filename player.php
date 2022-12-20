@@ -6,8 +6,8 @@ header('Access-Control-Allow-Origin: *');
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-  <script src="./node_modules/video.js/dist/video.min.js"></script>
-  <script src="./node_modules/m3u8-parser/dist/m3u8-parser.min.js"></script>
+  <script src="./node_modules/video.js/dist/video.js"></script>
+  <script src="./node_modules/m3u8-parser/dist/m3u8-parser.js"></script>
 
 </head>
 
@@ -16,7 +16,7 @@ header('Access-Control-Allow-Origin: *');
     id="my-video"
     class="video-js"
     controls
-    preload="auto"
+    preload="none"
     width="640"
     height="264"
     data-setup="{}"
