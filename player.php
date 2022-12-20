@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 ?>
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script src="./node_modules/hls.js/dist/hls.js"></script>
 </head>
 
 <body>
