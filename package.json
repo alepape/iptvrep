@@ -1,0 +1,22 @@
+{
+  "name": "iptvrep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "player.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alepape/iptvrep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alepape/iptvrep/issues"
+  },
+  "homepage": "https://github.com/alepape/iptvrep#readme",
+  "dependencies": {
+    "m3u8-parser": "^6.0.0"
+  }
+}
