@@ -13,6 +13,6 @@ $content = file_get_contents($filepath);
 
 header('Content-Length: ', mb_strlen($content, '8bit'));
 
-echo $output;
+echo $content;
 
 ?>
