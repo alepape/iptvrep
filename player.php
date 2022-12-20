@@ -2,34 +2,34 @@
 header('Access-Control-Allow-Origin: *');
 ?>
 <head>
-  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-  <script src="./node_modules/video.js/dist/video.js"></script>
-  <script src="./node_modules/m3u8-parser/dist/m3u8-parser.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
 </head>
 
 <body>
-  <video
-    id="my-video"
-    class="video-js"
-    controls
-    preload="none"
-    width="640"
-    height="264"
-    data-setup="{}"
-  >
-    <source src="./custom.m3u8" type="application/x-mpegURL" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
-  </video>
-
-
+<video id="video"></video>
+<script>
+  var video = document.getElementById('video');
+  var videoSrc = 'http://192.168.1.143/tv/local.php?f=custom.m3u8';
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+  }
+  // HLS.js is not supported on platforms that do not have Media Source
+  // Extensions (MSE) enabled.
+  //
+  // When the browser has built-in HLS support (check using `canPlayType`),
+  // we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video
+  // element through the `src` property. This is using the built-in support
+  // of the plain video element, without using HLS.js.
+  //
+  // Note: it would be more normal to wait on the 'canplay' event below however
+  // on Safari (where you are most likely to find built-in HLS support) the
+  // video.src URL must be on the user-driven white-list before a 'canplay'
+  // event will be emitted; the last video event that can be reliably
+  // listened-for when the URL is not on the white-list is 'loadedmetadata'.
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = videoSrc;
+  }
+</script>
 </body>
