@@ -21,7 +21,7 @@ header('Access-Control-Allow-Origin: *');
     height="264"
     data-setup="{}"
   >
-    <source src="https://c.mjh.nz/abc-news.m3u8" type="application/x-mpegURL" />
+    <source src="./custom.m3u8" type="application/x-mpegURL" />
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
       web browser that
