@@ -137,22 +137,38 @@ function getYTurl($videoid) {
   $curl = curl_init();
 
   curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://www.youtube.com/get_video_info?video_id='.$videoid,
+    CURLOPT_URL => 'https://youtubei.googleapis.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
     CURLOPT_TIMEOUT => 0,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    CURLOPT_CUSTOMREQUEST => 'GET',
+    CURLOPT_CUSTOMREQUEST => 'POST',
+    CURLOPT_POSTFIELDS =>'{
+   "context": {
+     "client": {
+      "hl": "en",
+      "clientName": "WEB",
+      "clientVersion": "2.20210721.00.00",
+      "mainAppWebInfo": {
+          "graftUrl": "/watch?v='.$videoid.'"
+      }
+     }
+    },
+    "videoId": "'.$videoid.'"
+  }',
+    CURLOPT_HTTPHEADER => array(
+      'Content-Type: application/json'
+    ),
   ));
 
   $response = curl_exec($curl);
   curl_close($curl);
-  $array = [];
-  parse_str($response, $array);
-  $json = $array['player_response'];
-  $jsonObj = json_decode($json, true);
+  //$array = [];
+  //parse_str($response, $array);
+  //$json = $array['player_response'];
+  $jsonObj = json_decode($response, true);
   return $jsonObj['streamingData']['hlsManifestUrl'];
   
 }
@@ -355,11 +371,11 @@ $yt = array(
 );
 // title, logo, videoID
 $yt["youtube"] = array(
-  array("Euronews", "", "sPgqEHsONK8"),
+  array("Euronews", "", "ntmPIzlkcJk"),
   array("NBC News", "", "q2hcCya5TE4"),
   array("ABC News", "", "w_Ma8oQLmSM"),
-  array("DW News", "", "qMtcWqCL_UQ"),
-  array("LoFi Girl", "", "5qap5aO4i9A")
+  array("DW News", "", "ammKkVgtIHw"),
+  array("LoFi Girl", "", "jfKfPfyJRdk")
 );
 
 $main = array(
