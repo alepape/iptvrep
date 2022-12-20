@@ -3,6 +3,9 @@
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  <script src="./node_modules/video.js/dist/video.min.js"></script>
+  <script src="./node_modules/m3u8-parser/dist/m3u8-parser.min.js"></script>
+
 </head>
 
 <body>
@@ -16,7 +19,7 @@
     poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
-    <source src="https://c.mjh.nz/abc-news.m3u8" type="video/mp4" />
+    <source src="https://c.mjh.nz/abc-news.m3u8" type="application/x-mpegURL" />
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
       web browser that
@@ -26,5 +29,5 @@
     </p>
   </video>
 
-  <script src="./node_modules/video.js/dist/video.min.js"></script>
+
 </body>
