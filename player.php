@@ -1,3 +1,6 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+?>
 <head>
   <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
@@ -16,7 +19,6 @@
     preload="auto"
     width="640"
     height="264"
-    poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
     <source src="https://c.mjh.nz/abc-news.m3u8" type="application/x-mpegURL" />
