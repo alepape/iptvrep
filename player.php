@@ -9,7 +9,7 @@ header('Access-Control-Allow-Origin: *');
 <video id="video"></video>
 <script>
   var video = document.getElementById('video');
-  var videoSrc = 'http://192.168.1.143/tv/local.php?f=custom.m3u8';
+  var videoSrc = './custom.m3u8';
   if (Hls.isSupported()) {
     var hls = new Hls();
     hls.loadSource(videoSrc);
