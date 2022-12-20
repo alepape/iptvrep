@@ -26,5 +26,5 @@
     </p>
   </video>
 
-  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  <script src="./node_modules/video.js/dist/video.min.js"></script>
 </body>
