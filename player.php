@@ -6,7 +6,7 @@ header('Access-Control-Allow-Origin: *');
 </head>
 
 <body>
-<video id="video"></video>
+<video height="600" controls id="video"></video>
 <script>
   var video = document.getElementById('video');
   var videoSrc = 'https://cbsn-la.cbsnstream.cbsnews.com/out/v1/57b6c4534a164accb6b1872b501e0028/master.m3u8';
