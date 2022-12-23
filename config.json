@@ -1,0 +1,113 @@
+{
+    "sources": [
+        {
+            "file": null,
+            "url": "http:\/\/i.mjh.nz\/au\/Melbourne\/raw-tv.m3u8",
+            "remove": null,
+            "keep": null,
+            "epg": true,
+            "group": "Basic",
+            "order": 0,
+            "title": "Melbourne"
+        },
+        {
+            "file": null,
+            "url": "https:\/\/gist.githubusercontent.com\/onigetoc\/8ed7263e644b7d121d0275c805f1ee4a\/raw\/8c141f092e795ce68b2f9190a988df1be5d2a0c6\/IPTV-big-list.m3u",
+            "remove": [
+                "Presstv live",
+                "Sky News (UK)",
+                "Newsmax | Youtube",
+                "FR: Euronews | Youtube",
+                "Euronews | Youtube",
+                "MSNBC (News) (US) (English)",
+                "FR: Euronews",
+                "CBS",
+                "RTE News Now",
+                "Trace Urban",
+                "TR: CNN",
+                "E-I",
+                "CBC News",
+                "FOX 5 News",
+                "BFM Sport (fr)"
+            ],
+            "keep": null,
+            "epg": false,
+            "group": "Misc",
+            "order": 5,
+            "title": "BIG"
+        },
+        {
+            "file": "flux.m3u8",
+            "url": null,
+            "remove": null,
+            "keep": null,
+            "epg": false,
+            "group": "Misc",
+            "order": 4,
+            "title": "Fluxus.tv"
+        },
+        {
+            "file": "un-pluggedtv.m3u8",
+            "url": null,
+            "remove": [
+                "AMC plus",
+                "free pastebin iptv m3u playlist for vlc and Android"
+            ],
+            "keep": null,
+            "epg": false,
+            "group": "Misc",
+            "order": 4,
+            "title": "un-pluggedtv"
+        },
+        {
+            "file": "custom.m3u8",
+            "url": null,
+            "remove": [
+                "Newsmax"
+            ],
+            "keep": null,
+            "epg": false,
+            "group": "Misc",
+            "order": 4,
+            "title": "Custom"
+        },
+        {
+            "file": null,
+            "url": "https:\/\/iptv-org.github.io\/iptv\/languages\/eng.m3u",
+            "remove": [
+                "AMC+ (720p)",
+                "Animax Asia (Vietnamese Subs) (720p)",
+                "CNN",
+                "CNN International Germany (720p)"
+            ],
+            "keep": null,
+            "epg": false,
+            "group": "Misc",
+            "order": 2,
+            "title": "IPTV.org - EN"
+        },
+        {
+            "file": null,
+            "url": "https:\/\/iptv-org.github.io\/iptv\/index.nsfw.m3u",
+            "remove": null,
+            "keep": null,
+            "epg": false,
+            "group": "Misc",
+            "order": 2,
+            "title": "IPTV.org"
+        },
+        {
+            "file": null,
+            "url": "https:\/\/iptv-org.github.io\/iptv\/countries\/fr.m3u",
+            "remove": [
+                "CNBC Europe (480p)",
+                "CNews (1080p)"
+            ],
+            "keep": null,
+            "epg": false,
+            "group": "France",
+            "order": 3,
+            "title": "IPTV.org - FR"
+        }
+    ]
+}

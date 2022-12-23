@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 /**
  * AJAX Cross Domain (PHP) Proxy 0.8
@@ -27,7 +30,7 @@ define('CSAJAX_FILTERS', true);
  * If set to false, $valid_requests should hold the whole URL ( without the parameters ) i.e. http://example.com/this/is/long/url/
  * Recommended value: false (for security reasons - do not forget that anyone can access your proxy)
  */
-define('CSAJAX_FILTER_DOMAIN', false);
+define('CSAJAX_FILTER_DOMAIN', true);
 
 /**
  * Enables or disables Expect: 100-continue header. Some webservers don't 
@@ -39,13 +42,15 @@ define('CSAJAX_SUPPRESS_EXPECT', false);
 /**
  * Set debugging to true to receive additional messages - really helpful on development
  */
-define('CSAJAX_DEBUG', false);
+define('CSAJAX_DEBUG', true);
 
 /**
  * A set of valid cross domain requests
  */
 $valid_requests = array(
-    'http://210.210.155.35' // TODO: make this dynamic
+    'i.mjh.nz', // TODO: make this dynamic
+    'csm-e-cen7ausw1live102-037da025cce3606e1.tls1.yospace.com',
+    'iptv-org.github.io'
 );
 
 /**

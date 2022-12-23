@@ -1,0 +1,84 @@
+    /* table styles */
+    #sourceTable {width: 100%;}
+    /* #sourceTable tr { cursor: move; } */
+    #sourceTable td { vertical-align: middle; }
+    /* #sourceTable tr td:first-child { width: 80px; } */
+    #sourceTable tr td:nth-child(3) {text-align: right;}
+
+    #sourceContent {width: 100%;}
+    /* #sourceContent tr { cursor: move; } */
+    #sourceContent td { vertical-align: middle; }
+    #sourceContent tr td:first-child {width: 40px;}
+    #sourceContent tr td:nth-child(2) {text-align: left;}
+
+    #selectedContent {width: 100%;}
+    #selectedContent tr { cursor: move; }
+    #selectedContent td { vertical-align: middle; }
+
+    #selectedSourceURL {overflow-x: auto;/* display: block; */}
+
+    .selectedRow {
+        background-color: #bde9c2;
+    }
+
+    .badRow {
+        background-color: #e9bdbd;
+    }
+
+    #sourceDiv {
+        float: left;
+        width: calc(30% - 10px);
+        margin-right: 10px;
+    }
+
+    #streamDiv {
+        float: left;
+        width: calc(70% - 10px);
+        padding-left: 10px;
+        max-height: 800px;
+        overflow-y: auto;
+        border-left-style: dashed;
+        border-left-width: 1px;
+    }
+
+    #outputDiv {
+        float: left;
+        width: calc(70% - 10px);
+        margin-right: 10px;
+    }
+
+    #detailsDiv {
+        float: left;
+        width: calc(30% - 10px);
+        padding-left: 10px;
+        border-left-style: dashed;
+        border-left-width: 1px;
+    }
+
+    #streamlogourl {
+        /* height: 150px; */
+        background-color: #eee;
+        max-width: 100%;
+        margin-top: 5px;
+        max-height: 100px;
+    }
+
+    td img {
+        width: 20px;
+        background-color: #eee;
+    }
+
+    td.url {
+        width: 66%;
+        overflow-x: auto;
+        max-width: 200px;
+    }
+
+    /* drag styles */
+    .dragged { background-color: white; color: white; border-color: white; }
+    .dragged td * { visibility: hidden; }
+
+    body {
+        margin: 20px;
+        font-family: 'Trebuchet MS';
+    }
