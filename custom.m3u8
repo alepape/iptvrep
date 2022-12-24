@@ -4,5 +4,19 @@ https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 https://nmxlive.akamaized.net/hls/live/529965/Live_1/master.m3u8
 #EXTINF:-1 tvg-id="tv.weather" tvg-logo="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/d0/0b/1d/d00b1d4f-9ce1-3cd9-d7b6-43fb7cbabc47/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png" group-title="Documentaries",The Weather Channel
 http://weather-lh.akamaihd.net/i/twc_1@92006/index_2400_av-p.m3u8
-
-https://ptvlive.kordia.net.nz/out/v1/3fc2254c865a457c8d7fbbce227a2aae/index.m3u8
+#EXTINF:-1,FranceInfo
+http://gratuittv.free.fr/Files/franceinfo/live/playlist.m3u8
+#EXTINF:-1,i24News
+http://gratuittv.free.fr/Files/i24news/live/playlist.m3u8
+#EXTINF:-1,LCP
+http://gratuittv.free.fr/Files/lcp/live/playlist.m3u8
+#EXTINF:-1,Melody
+http://gratuittv.free.fr/Files/melody/live/master.m3u8
+#EXTINF:-1,Paris Premiere
+http://gratuittv.free.fr/Files/parispremier/live/playlist.m3u8
+#EXTINF:-1,TV5 Monde Info
+http://gratuittv.free.fr/Files/tv5mondeinfo/live/playlist.m3u8
+#EXTINF:-1,Ushuaia TV
+http://gratuittv.free.fr/Files/ushuaiatv/live/playlist.m3u8
+#EXTINF:-1,W9
+http://gratuittv.free.fr/Files/w9/live/playlist.m3u8

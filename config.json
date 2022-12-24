@@ -28,7 +28,12 @@
                 "E-I",
                 "CBC News",
                 "FOX 5 News",
-                "BFM Sport (fr)"
+                "BFM Sport (fr)",
+                "KTVU 2 (News) (US) (English)",
+                "Buzzr",
+                "London Live",
+                "M6",
+                "TF1 Series films"
             ],
             "keep": null,
             "epg": false,
@@ -39,7 +44,16 @@
         {
             "file": "flux.m3u8",
             "url": null,
-            "remove": null,
+            "remove": [
+                "Sky News",
+                "Sky News (UK)",
+                "Sky News (Opt-1)",
+                "Sky News (SD)",
+                "Sky News (GB)",
+                "BBC News",
+                "BBC (GB)",
+                "BBC Earth (New!)"
+            ],
             "keep": null,
             "epg": false,
             "group": "Misc",

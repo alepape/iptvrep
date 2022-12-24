@@ -5,7 +5,7 @@
     /* #sourceTable tr td:first-child { width: 80px; } */
     #sourceTable tr td:nth-child(3) {text-align: right;}
 
-    #sourceContent {width: 100%;}
+    #sourceContent {width: 100%;/* overflow-y: scroll; */}
     /* #sourceContent tr { cursor: move; } */
     #sourceContent td { vertical-align: middle; }
     #sourceContent tr td:first-child {width: 40px;}
@@ -25,38 +25,34 @@
         background-color: #e9bdbd;
     }
 
-    #sourceDiv {
-        float: left;
-        width: calc(30% - 10px);
-        margin-right: 10px;
+    .wait {
+        cursor: wait;
     }
 
     #streamDiv {
-        float: left;
-        width: calc(70% - 10px);
-        padding-left: 10px;
-        max-height: 800px;
-        overflow-y: auto;
         border-left-style: dashed;
         border-left-width: 1px;
     }
 
-    #outputDiv {
-        float: left;
-        width: calc(70% - 10px);
-        margin-right: 10px;
+    #streamDivTable {
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+    #outputDivTable {
+        max-height: 800px;
+        overflow-y: auto;
+        /* height: 400px; */
+        clear: both;
+        /* margin-top: 10px; */
     }
 
     #detailsDiv {
-        float: left;
-        width: calc(30% - 10px);
-        padding-left: 10px;
         border-left-style: dashed;
         border-left-width: 1px;
     }
 
     #streamlogourl {
-        /* height: 150px; */
         background-color: #eee;
         max-width: 100%;
         margin-top: 5px;

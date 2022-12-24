@@ -1,16 +1,16 @@
 [
     {
-        "tvg_id": null,
+        "tvg_id": "abc-news-us",
         "name": "ABC News",
-        "tvg_logo": "https:\/\/i.imgur.com\/HQhdVG1.png",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/2a\/ABC_News_logo_2021.svg\/220px-ABC_News_logo_2021.svg.png",
         "url": "https:\/\/content.uplynk.com\/channel\/3324f2467c414329b3b0cc5cd987b6be.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "USA"
+        "group_title": "News"
     },
     {
         "tvg_id": "EuronewsFrench.fr",
-        "name": "Euronews Fran\u00e7ais (720p)",
+        "name": "Euronews Fran\u00e7ais",
         "tvg_logo": "https:\/\/i.imgur.com\/8t9mdg9.png",
         "url": "https:\/\/euronews-euronews-french-3-us.plex.wurl.tv\/playlist.m3u8",
         "tvg_language": null,
@@ -20,33 +20,33 @@
     {
         "tvg_id": "mjh-7-btv",
         "name": "Bloomberg Tv",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/7-btv.png",
+        "tvg_logo": "https:\/\/i.imgur.com\/OuogLHx.png",
         "url": "https:\/\/i.mjh.nz\/7-btv.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "News"
     },
     {
         "tvg_id": "BloombergTVEurope.uk",
-        "name": "Bloomberg TV Europe (720p)",
+        "name": "Bloomberg TV Europe",
         "tvg_logo": "https:\/\/i.imgur.com\/OuogLHx.png",
         "url": "https:\/\/bloomberg.com\/media-manifest\/streams\/eu.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Business"
+        "group_title": "News"
     },
     {
         "tvg_id": "mjh-abc-news",
         "name": "ABC NEWS",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/abc-news.png",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a4\/ABC_News_%282017%29.svg\/1024px-ABC_News_%282017%29.svg.png",
         "url": "https:\/\/c.mjh.nz\/abc-news.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "News"
     },
     {
         "tvg_id": "AlJazeeraEnglish.qa",
-        "name": "Al Jazeera English (1080p)",
+        "name": "Al Jazeera English",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/f\/f2\/Aljazeera_eng.svg\/512px-Aljazeera_eng.svg.png",
         "url": "https:\/\/live-hls-v3-aje.getaj.net\/AJE-V3\/index.m3u8",
         "tvg_language": null,
@@ -55,7 +55,7 @@
     },
     {
         "tvg_id": "France24French.fr",
-        "name": "France 24 French (720p)",
+        "name": "France 24",
         "tvg_logo": "https:\/\/i.imgur.com\/61MSiq9.png",
         "url": "http:\/\/81.94.196.204\/tsstreamer\/France24_HD.ts",
         "tvg_language": null,
@@ -65,11 +65,11 @@
     {
         "tvg_id": "mjh-7-ausbz",
         "name": "ausbiz",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/7-ausbz.png",
+        "tvg_logo": "https:\/\/static-cse.canva.com\/blob\/751690\/Logo2x1.44bfd3a4.png",
         "url": "https:\/\/i.mjh.nz\/7-ausbz.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "News"
     },
     {
         "tvg_id": "mjh-channel-news-asia",
@@ -78,20 +78,20 @@
         "url": "https:\/\/i.mjh.nz\/channel-news-asia.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "World"
+        "group_title": "News"
     },
     {
         "tvg_id": "NHKWorldJapan.jp",
-        "name": "NHK World Japan (1080p)",
+        "name": "NHK World Japan",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/NHK_World-Japan_TV.svg\/512px-NHK_World-Japan_TV.svg.png",
         "url": "https:\/\/nhkwlive-ojp.akamaized.net\/hls\/live\/2003459\/nhkwlive-ojp-en\/index.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Culture;News"
+        "group_title": "News"
     },
     {
         "tvg_id": "DWEnglish.de",
-        "name": "DW English (1080p)",
+        "name": "DW English",
         "tvg_logo": "https:\/\/i.imgur.com\/A1xzjOI.png",
         "url": "https:\/\/dwamdstream102.akamaized.net\/hls\/live\/2015525\/dwstream102\/index.m3u8",
         "tvg_language": null,
@@ -105,38 +105,110 @@
         "url": "https:\/\/i.mjh.nz\/sbs-world-watch.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "",
+        "name": "BBC World News (Opt-1)",
+        "tvg_logo": "https:\/\/www.digitaltveurope.com\/files\/2011\/12\/BBC-World-News1.jpg",
+        "url": "http:\/\/ott-cdn.ucom.am\/s24\/index.m3u8?fluxustv.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "",
+        "name": "BBC World News (Opt-2)",
+        "tvg_logo": "https:\/\/www.digitaltveurope.com\/files\/2011\/12\/BBC-World-News1.jpg",
+        "url": "http:\/\/92.43.140.249\/s24\/04.m3u8?fluxustv.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "",
+        "name": "BBC World News (Opt-3)",
+        "tvg_logo": "https:\/\/www.digitaltveurope.com\/files\/2011\/12\/BBC-World-News1.jpg",
+        "url": "http:\/\/103.199.161.254\/Content\/bbcworld\/Live\/Channel(BBCworld)\/index.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "i24news",
+        "name": "i24News",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/6\/6f\/I24NEWS_logo.svg\/640px-I24NEWS_logo.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/i24news\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "franceinfo",
+        "name": "FranceInfo",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/03\/Franceinfo.svg\/1024px-Franceinfo.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/franceinfo\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "lcp.fr",
+        "name": "LCP",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/56\/LCP.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/lcp\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "BX1",
+        "name": "BX1",
+        "tvg_logo": "https:\/\/i.imgur.com\/VHAYeqR.png",
+        "url": "https:\/\/59959724487e3.streamlock.net\/stream\/live\/master.m3u8",
+        "tvg_language": "French",
+        "tvg_country": "BE",
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "tv5mondeinfo",
+        "name": "TV5 Monde Info",
+        "tvg_logo": "https:\/\/images.squarespace-cdn.com\/content\/v1\/5ea862a8804f7204dfbb35fb\/1597163581053-KIWRJ0OG6W9W8DUUGF8E\/network_tv5+info.png?format=300w",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/tv5mondeinfo\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
     },
     {
         "tvg_id": "mjh-sbs-world-movies",
         "name": "SBS World Movies",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/sbs-world-movies.png",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/f\/fd\/SBS_World_Movies_logo_2019.svg\/640px-SBS_World_Movies_logo_2019.svg.png",
         "url": "https:\/\/i.mjh.nz\/sbs-world-movies.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "Movies"
     },
     {
         "tvg_id": "mjh-sbs-viceland",
         "name": "SBS VICELAND",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/sbs-viceland.png",
+        "tvg_logo": "https:\/\/s3-eu-west-1.amazonaws.com\/static.media.info\/l\/o\/6\/6273.1479177373.png",
         "url": "https:\/\/i.mjh.nz\/sbs-viceland.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "Entertainment"
     },
     {
         "tvg_id": "BBCAmericaEast.us",
-        "name": "BBC America (720p)",
+        "name": "BBC America",
         "tvg_logo": "https:\/\/i.imgur.com\/z7QrIoY.png",
         "url": "https:\/\/bcovlive-a.akamaihd.net\/c9bf201b06694453bb29282f97191f58\/us-east-1\/6240731308001\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Undefined"
+        "group_title": "Entertainment"
     },
     {
         "tvg_id": "AMCEast.us",
-        "name": "AMC East (720p)",
+        "name": "AMC East",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/34\/AMC_logo_2019.svg\/512px-AMC_logo_2019.svg.png",
         "url": "https:\/\/bcovlive-a.akamaihd.net\/b3ed62003de946c896f4f541b908376e\/us-east-1\/6240731308001\/playlist.m3u8",
         "tvg_language": null,
@@ -154,7 +226,7 @@
     },
     {
         "tvg_id": "M6.fr",
-        "name": "M6 (1080p)",
+        "name": "M6",
         "tvg_logo": "https:\/\/i.imgur.com\/7GVp3fW.png",
         "url": "https:\/\/shls-m6-france-prod-dub.shahid.net\/out\/v1\/c8a9f6e000cd4ebaa4d2fc7d18c15988\/index.m3u8",
         "tvg_language": null,
@@ -163,16 +235,16 @@
     },
     {
         "tvg_id": "TF1SeriesFilms.fr",
-        "name": "TF1 S\u00e9ries Films (360p)",
+        "name": "TF1 S\u00e9ries Films",
         "tvg_logo": "https:\/\/i.imgur.com\/MfBKUpC.png",
         "url": "http:\/\/gratuittv.free.fr\/Files\/tfsf\/live\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Movies"
+        "group_title": "Entertainment"
     },
     {
         "tvg_id": "RakutenTVComedyMoviesFrance.fr",
-        "name": "Rakuten Comedy Movies France (720p)",
+        "name": "Rakuten Comedy Movies France",
         "tvg_logo": "https:\/\/i.imgur.com\/o1qKoje.jpg",
         "url": "https:\/\/rakuten-comedymovies-7-fr.plex.wurl.tv\/playlist.m3u8",
         "tvg_language": null,
@@ -181,48 +253,75 @@
     },
     {
         "tvg_id": "RakutenTVSpotlightFrance.fr",
-        "name": "Rakuten Spotlight France (720p)",
+        "name": "Rakuten Spotlight France",
         "tvg_logo": "https:\/\/i.imgur.com\/dWNxCqp.png",
         "url": "https:\/\/rakuten-spotlight-7-fr.plex.wurl.tv\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "RakutenAnime.fr",
+        "name": "Rakuten TV Anime Digital Network",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e5\/Rakuten_TV_logo.svg\/640px-Rakuten_TV_logo.svg.png",
+        "url": "https:\/\/amg00762-adn-adn-rakuten-jnwoo.amagi.tv\/hls\/amagi_hls_data_rakutenAA-adn-rakuten\/CDN\/master.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "RakutenTopFilm.fr",
+        "name": "Rakuten TV Top Films",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e5\/Rakuten_TV_logo.svg\/640px-Rakuten_TV_logo.svg.png",
+        "url": "https:\/\/rakuten-topfree-7-fr.plex.wurl.tv\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "Movies"
     },
     {
-        "tvg_id": null,
-        "name": "Rakuten TV Anime Digital Network",
-        "tvg_logo": null,
-        "url": "https:\/\/amg00762-adn-adn-rakuten-jnwoo.amagi.tv\/hls\/amagi_hls_data_rakutenAA-adn-rakuten\/CDN\/master.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "Undefined"
-    },
-    {
-        "tvg_id": null,
-        "name": "Rakuten TV Top Films (720p)",
-        "tvg_logo": null,
-        "url": "https:\/\/rakuten-topfree-7-fr.plex.wurl.tv\/playlist.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "Undefined"
-    },
-    {
-        "tvg_id": null,
-        "name": "Rakuten TV BBC Drama (720p)",
-        "tvg_logo": null,
+        "tvg_id": "RakutenBBC.fr",
+        "name": "Rakuten TV BBC Drama",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e5\/Rakuten_TV_logo.svg\/640px-Rakuten_TV_logo.svg.png",
         "url": "https:\/\/bbceu-bbcdrama-1-fr.rakuten.wurl.tv\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Undefined"
+        "group_title": "Entertainment"
     },
     {
-        "tvg_id": null,
-        "name": "Fuel TV (1080p)",
-        "tvg_logo": null,
+        "tvg_id": "rick-and-morty",
+        "name": "Rick and Morty",
+        "tvg_logo": "logos\/rickandmorty.png",
+        "url": "http:\/\/adultswim-vodlive.cdn.turner.com\/live\/rick-and-morty\/stream.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "parispremier",
+        "name": "Paris Premiere",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/d\/d1\/Paris_Premi%C3%A8re_2011.svg\/1024px-Paris_Premi%C3%A8re_2011.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/parispremier\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "w9",
+        "name": "W9",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/62\/W9-Logo.svg\/640px-W9-Logo.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/w9\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "fuel-tv",
+        "name": "Fuel TV",
+        "tvg_logo": "https:\/\/fuel.tv\/images\/ftv_150x140.png",
         "url": "https:\/\/fueltv-fueltv-8-fr.samsung.wurl.com\/manifest\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Undefined"
+        "group_title": "Lifestyle"
     },
     {
         "tvg_id": "mjh-redbull-tv",
@@ -231,38 +330,20 @@
         "url": "https:\/\/i.mjh.nz\/redbull-tv.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "World"
+        "group_title": "Lifestyle"
     },
     {
         "tvg_id": "MyZenTV.fr",
-        "name": "MyZen TV (1080p)",
+        "name": "MyZen TV",
         "tvg_logo": "https:\/\/i.imgur.com\/fIi8o0C.png",
         "url": "https:\/\/cdn-ue1-prod.tsv2.amagi.tv\/linear\/amg01255-secomcofites-my-myzen-en-plex\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Undefined"
-    },
-    {
-        "tvg_id": "AtomicTV.ro",
-        "name": "Atomic TV (360p)",
-        "tvg_logo": "https:\/\/i.imgur.com\/O4uI0Uy.png",
-        "url": "https:\/\/atomic.streamnet.ro\/atomictv.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "Music"
-    },
-    {
-        "tvg_id": "EuroIndieMusicChartTV.it",
-        "name": "Euro Indie Music Chart TV (360p)",
-        "tvg_logo": "https:\/\/i.imgur.com\/UDFBYpN.png",
-        "url": "http:\/\/178.33.224.197:1935\/euroindiemusic\/euroindiemusic\/playlist.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "Music"
+        "group_title": "Lifestyle"
     },
     {
         "tvg_id": "FashionTVEurope.fr",
-        "name": "Fashion TV (1080p)",
+        "name": "Fashion TV",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/7a\/Fashion_TV_logo.svg\/512px-Fashion_TV_logo.svg.png",
         "url": "https:\/\/fashiontv-fashiontv-1-eu.rakuten.wurl.tv\/playlist.m3u8",
         "tvg_language": null,
@@ -270,13 +351,49 @@
         "group_title": "Lifestyle"
     },
     {
+        "tvg_id": "AtomicTV.ro",
+        "name": "Atomic TV",
+        "tvg_logo": "https:\/\/i.imgur.com\/O4uI0Uy.png",
+        "url": "https:\/\/atomic.streamnet.ro\/atomictv.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
+        "tvg_id": "KordiaTV.nz",
+        "name": "Kordia TV",
+        "tvg_logo": "https:\/\/i.imgur.com\/7FCjq7C.png",
+        "url": "https:\/\/ptvlive.kordia.net.nz\/out\/v1\/3fc2254c865a457c8d7fbbce227a2aae\/index.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
+        "tvg_id": "EuroIndieMusicChartTV.it",
+        "name": "Euro Indie Music Chart TV",
+        "tvg_logo": "https:\/\/i.imgur.com\/UDFBYpN.png",
+        "url": "http:\/\/178.33.224.197:1935\/euroindiemusic\/euroindiemusic\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
+        "tvg_id": "melody",
+        "name": "Melody",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4f\/Melody_logo_2013.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/melody\/live\/master.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
         "tvg_id": "mjh-7-srn",
         "name": "Stingray Naturescape",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/7-srn.png",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/40\/Stingray_Naturescape.png",
         "url": "https:\/\/i.mjh.nz\/7-srn.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "Nature"
     },
     {
         "tvg_id": "mjh-7-lov",
@@ -285,6 +402,15 @@
         "url": "https:\/\/i.mjh.nz\/7-lov.m3u8",
         "tvg_language": null,
         "tvg_country": null,
-        "group_title": "Au"
+        "group_title": "Nature"
+    },
+    {
+        "tvg_id": "ushuaiatv",
+        "name": "Ushuaia TV",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/d\/d0\/Ushua%C3%AFa_TV_logo_2019.svg\/640px-Ushua%C3%AFa_TV_logo_2019.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/ushuaiatv\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Nature"
     }
 ]
