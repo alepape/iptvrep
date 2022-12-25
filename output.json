@@ -1,5 +1,14 @@
 [
     {
+        "tvg_id": "CNN.us",
+        "name": "CNN",
+        "tvg_logo": "https:\/\/i.imgur.com\/vyrc1I1.png",
+        "url": "https:\/\/tve-live-lln.warnermediacdn.com\/hls\/live\/586495\/cnngo\/cnn_slate\/VIDEO_0_3564000.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
         "tvg_id": "abc-news-us",
         "name": "ABC News",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/2a\/ABC_News_logo_2021.svg\/220px-ABC_News_logo_2021.svg.png",
@@ -9,10 +18,19 @@
         "group_title": "News"
     },
     {
-        "tvg_id": "EuronewsFrench.fr",
-        "name": "Euronews Fran\u00e7ais",
-        "tvg_logo": "https:\/\/i.imgur.com\/8t9mdg9.png",
-        "url": "https:\/\/euronews-euronews-french-3-us.plex.wurl.tv\/playlist.m3u8",
+        "tvg_id": "CBSNews.us",
+        "name": "CBS News",
+        "tvg_logo": "https:\/\/i.imgur.com\/nki2HDQ.png",
+        "url": "https:\/\/cbsnews.akamaized.net\/hls\/live\/2020607\/cbsnlineup_8\/master.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "NBCNewsNow.us",
+        "name": "NBC News",
+        "tvg_logo": "https:\/\/i.imgur.com\/v48mMRT.png",
+        "url": "http:\/\/dai2.xumo.com\/xumocdn\/p=roku\/amagi_hls_data_xumo1212A-xumo-nbcnewsnow\/CDN\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
@@ -36,6 +54,15 @@
         "group_title": "News"
     },
     {
+        "tvg_id": "bbc-world-news",
+        "name": "BBC World News",
+        "tvg_logo": "https:\/\/i.imgur.com\/joD38lo.png",
+        "url": "http:\/\/ott-cdn.ucom.am\/s24\/index.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
         "tvg_id": "mjh-abc-news",
         "name": "ABC NEWS",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a4\/ABC_News_%282017%29.svg\/1024px-ABC_News_%282017%29.svg.png",
@@ -45,28 +72,28 @@
         "group_title": "News"
     },
     {
-        "tvg_id": "AlJazeeraEnglish.qa",
-        "name": "Al Jazeera English",
-        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/f\/f2\/Aljazeera_eng.svg\/512px-Aljazeera_eng.svg.png",
-        "url": "https:\/\/live-hls-v3-aje.getaj.net\/AJE-V3\/index.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "News"
-    },
-    {
-        "tvg_id": "France24French.fr",
-        "name": "France 24",
-        "tvg_logo": "https:\/\/i.imgur.com\/61MSiq9.png",
-        "url": "http:\/\/81.94.196.204\/tsstreamer\/France24_HD.ts",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "News"
-    },
-    {
         "tvg_id": "mjh-7-ausbz",
         "name": "ausbiz",
         "tvg_logo": "https:\/\/static-cse.canva.com\/blob\/751690\/Logo2x1.44bfd3a4.png",
         "url": "https:\/\/i.mjh.nz\/7-ausbz.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "mjh-sbs-world-watch",
+        "name": "SBS World Watch",
+        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/sbs-world-watch.png",
+        "url": "https:\/\/i.mjh.nz\/sbs-world-watch.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "AlJazeeraEnglish.qa",
+        "name": "Al Jazeera English",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/f\/f2\/Aljazeera_eng.svg\/512px-Aljazeera_eng.svg.png",
+        "url": "https:\/\/live-hls-v3-aje.getaj.net\/AJE-V3\/index.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
@@ -99,46 +126,28 @@
         "group_title": "News"
     },
     {
-        "tvg_id": "mjh-sbs-world-watch",
-        "name": "SBS World Watch",
-        "tvg_logo": "https:\/\/i.mjh.nz\/.images\/sbs-world-watch.png",
-        "url": "https:\/\/i.mjh.nz\/sbs-world-watch.m3u8",
+        "tvg_id": "EuronewsFrench.fr",
+        "name": "Euronews Fran\u00e7ais",
+        "tvg_logo": "https:\/\/i.imgur.com\/8t9mdg9.png",
+        "url": "https:\/\/euronews-euronews-french-3-us.plex.wurl.tv\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
     },
     {
-        "tvg_id": "",
-        "name": "BBC World News (Opt-1)",
-        "tvg_logo": "https:\/\/www.digitaltveurope.com\/files\/2011\/12\/BBC-World-News1.jpg",
-        "url": "http:\/\/ott-cdn.ucom.am\/s24\/index.m3u8?fluxustv.m3u8",
+        "tvg_id": "tv5mondeinfo",
+        "name": "TV5 Monde Info",
+        "tvg_logo": "https:\/\/images.squarespace-cdn.com\/content\/v1\/5ea862a8804f7204dfbb35fb\/1597163581053-KIWRJ0OG6W9W8DUUGF8E\/network_tv5+info.png?format=300w",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/tv5mondeinfo\/live\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
     },
     {
-        "tvg_id": "",
-        "name": "BBC World News (Opt-2)",
-        "tvg_logo": "https:\/\/www.digitaltveurope.com\/files\/2011\/12\/BBC-World-News1.jpg",
-        "url": "http:\/\/92.43.140.249\/s24\/04.m3u8?fluxustv.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "News"
-    },
-    {
-        "tvg_id": "",
-        "name": "BBC World News (Opt-3)",
-        "tvg_logo": "https:\/\/www.digitaltveurope.com\/files\/2011\/12\/BBC-World-News1.jpg",
-        "url": "http:\/\/103.199.161.254\/Content\/bbcworld\/Live\/Channel(BBCworld)\/index.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "News"
-    },
-    {
-        "tvg_id": "i24news",
-        "name": "i24News",
-        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/6\/6f\/I24NEWS_logo.svg\/640px-I24NEWS_logo.svg.png",
-        "url": "http:\/\/gratuittv.free.fr\/Files\/i24news\/live\/playlist.m3u8",
+        "tvg_id": "France24French.fr",
+        "name": "France 24",
+        "tvg_logo": "https:\/\/i.imgur.com\/61MSiq9.png",
+        "url": "http:\/\/81.94.196.204\/tsstreamer\/France24_HD.ts",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
@@ -153,10 +162,37 @@
         "group_title": "News"
     },
     {
+        "tvg_id": "",
+        "name": "Reuters TV",
+        "tvg_logo": "https:\/\/i.imgur.com\/AbvCnoH.png",
+        "url": "https:\/\/reuters-reutersnow-1-eu.rakuten.wurl.tv\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "CNews.fr",
+        "name": "CNews \u24b9",
+        "tvg_logo": "https:\/\/i.imgur.com\/UMRGAHx.png",
+        "url": "https:\/\/www.dailymotion.com\/embed\/video\/x3b68jn",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
         "tvg_id": "lcp.fr",
         "name": "LCP",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/56\/LCP.png",
         "url": "http:\/\/gratuittv.free.fr\/Files\/lcp\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
+        "tvg_id": "i24news",
+        "name": "i24News",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/6\/6f\/I24NEWS_logo.svg\/640px-I24NEWS_logo.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/i24news\/live\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
@@ -168,15 +204,6 @@
         "url": "https:\/\/59959724487e3.streamlock.net\/stream\/live\/master.m3u8",
         "tvg_language": "French",
         "tvg_country": "BE",
-        "group_title": "News"
-    },
-    {
-        "tvg_id": "tv5mondeinfo",
-        "name": "TV5 Monde Info",
-        "tvg_logo": "https:\/\/images.squarespace-cdn.com\/content\/v1\/5ea862a8804f7204dfbb35fb\/1597163581053-KIWRJ0OG6W9W8DUUGF8E\/network_tv5+info.png?format=300w",
-        "url": "http:\/\/gratuittv.free.fr\/Files\/tv5mondeinfo\/live\/playlist.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
         "group_title": "News"
     },
     {
@@ -193,6 +220,15 @@
         "name": "SBS VICELAND",
         "tvg_logo": "https:\/\/s3-eu-west-1.amazonaws.com\/static.media.info\/l\/o\/6\/6273.1479177373.png",
         "url": "https:\/\/i.mjh.nz\/sbs-viceland.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "",
+        "name": "PBS America",
+        "tvg_logo": "https:\/\/i.imgur.com\/J4zE5z9.jpg",
+        "url": "https:\/\/pbs-samsunguk.amagi.tv\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "Entertainment"
@@ -225,10 +261,19 @@
         "group_title": "Movies"
     },
     {
-        "tvg_id": "M6.fr",
-        "name": "M6",
-        "tvg_logo": "https:\/\/i.imgur.com\/7GVp3fW.png",
-        "url": "https:\/\/shls-m6-france-prod-dub.shahid.net\/out\/v1\/c8a9f6e000cd4ebaa4d2fc7d18c15988\/index.m3u8",
+        "tvg_id": "TF1.fr",
+        "name": "TF1",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/dc\/TF1_logo_2013.png\/62px-TF1_logo_2013.png",
+        "url": "https:\/\/s13.tntendirect.com\/tf1\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "TFX.fr",
+        "name": "TFX",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/8\/83\/TFX_logo_2018.svg\/62px-TFX_logo_2018.svg.png",
+        "url": "https:\/\/s13.tntendirect.com\/nt1\/live\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "Entertainment"
@@ -238,6 +283,69 @@
         "name": "TF1 S\u00e9ries Films",
         "tvg_logo": "https:\/\/i.imgur.com\/MfBKUpC.png",
         "url": "http:\/\/gratuittv.free.fr\/Files\/tfsf\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "France2.fr",
+        "name": "France 2",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/53\/France_2_2018.svg\/35px-France_2_2018.svg.png",
+        "url": "https:\/\/s13.tntendirect.com\/france2\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "France3.fr",
+        "name": "France 3",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/dd\/France_3_2018.svg\/35px-France_3_2018.svg.png",
+        "url": "https:\/\/s13.tntendirect.com\/france3\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "France5.fr",
+        "name": "France 5",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/50\/France_5_2018.svg\/35px-France_5_2018.svg.png",
+        "url": "https:\/\/s13.tntendirect.com\/france5\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "M6.fr",
+        "name": "M6",
+        "tvg_logo": "https:\/\/i.imgur.com\/7GVp3fW.png",
+        "url": "https:\/\/shls-m6-france-prod-dub.shahid.net\/out\/v1\/c8a9f6e000cd4ebaa4d2fc7d18c15988\/index.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "w9",
+        "name": "W9",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/62\/W9-Logo.svg\/640px-W9-Logo.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/w9\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "TMC.fr",
+        "name": "TMC",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/a\/a8\/TMC_logo_2016.svg\/62px-TMC_logo_2016.svg.png",
+        "url": "https:\/\/s13.tntendirect.com\/tmc\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Entertainment"
+    },
+    {
+        "tvg_id": "parispremier",
+        "name": "Paris Premiere",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/d\/d1\/Paris_Premi%C3%A8re_2011.svg\/1024px-Paris_Premi%C3%A8re_2011.svg.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/parispremier\/live\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "Entertainment"
@@ -297,24 +405,6 @@
         "group_title": "Entertainment"
     },
     {
-        "tvg_id": "parispremier",
-        "name": "Paris Premiere",
-        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/d\/d1\/Paris_Premi%C3%A8re_2011.svg\/1024px-Paris_Premi%C3%A8re_2011.svg.png",
-        "url": "http:\/\/gratuittv.free.fr\/Files\/parispremier\/live\/playlist.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "Entertainment"
-    },
-    {
-        "tvg_id": "w9",
-        "name": "W9",
-        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/62\/W9-Logo.svg\/640px-W9-Logo.svg.png",
-        "url": "http:\/\/gratuittv.free.fr\/Files\/w9\/live\/playlist.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "Entertainment"
-    },
-    {
         "tvg_id": "fuel-tv",
         "name": "Fuel TV",
         "tvg_logo": "https:\/\/fuel.tv\/images\/ftv_150x140.png",
@@ -351,6 +441,24 @@
         "group_title": "Lifestyle"
     },
     {
+        "tvg_id": "NRJ12.fr",
+        "name": "NRJ 12",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/fr\/thumb\/9\/93\/NRJ_12_logo_2015.svg\/45px-NRJ_12_logo_2015.svg.png",
+        "url": "https:\/\/s13.tntendirect.com\/nrj12\/live\/playlist.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
+        "tvg_id": "VH1Italia.it",
+        "name": "VH1",
+        "tvg_logo": "https:\/\/i.imgur.com\/5ONlZGS.png",
+        "url": "https:\/\/content.uplynk.com\/channel\/36953f5b6546464590d2fcd954bc89cf.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
         "tvg_id": "AtomicTV.ro",
         "name": "Atomic TV",
         "tvg_logo": "https:\/\/i.imgur.com\/O4uI0Uy.png",
@@ -382,6 +490,24 @@
         "name": "Melody",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/4f\/Melody_logo_2013.png",
         "url": "http:\/\/gratuittv.free.fr\/Files\/melody\/live\/master.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
+        "tvg_id": "",
+        "name": "Deluxe Lounge HD",
+        "tvg_logo": "https:\/\/i.imgur.com\/LzIsXym.png",
+        "url": "https:\/\/d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com\/v1\/master\/81bfcafb76f9c947b24574657a9ce7fe14ad75c0\/live-prod\/9f58b8c3-80c1-11eb-908d-533d39655269\/0\/master.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "Music"
+    },
+    {
+        "tvg_id": "",
+        "name": "Clubbing TV",
+        "tvg_logo": "https:\/\/i.imgur.com\/D1IuAqu.jpg",
+        "url": "https:\/\/clubbingtv-samsunguk.amagi.tv\/playlist.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "Music"

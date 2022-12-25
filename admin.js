@@ -73,7 +73,7 @@ jQuery(function($) {
                 // check if bad
                 if (bad.includes(stream.name)) {
                     row.addClass("badRow");
-                    row.append($('<td><button type="button" class="btn btn-sm btn-danger">Add back</button></td>'));
+                    row.append($('<td><button type="button" class="btn btn-sm btn-danger">Reset</button></td>'));
                 } else {
                     row.append($('<td><button type="button" class="btn btn-sm btn-danger">Bad</button></td>'));
                 }
@@ -185,14 +185,20 @@ jQuery(function($) {
         return textArea.value;
     }
     var onAfterReordering = function(table) {
-        orderedSelected = [];
-        $("#"+table+" tbody tr").each(function(index, row) {
-            $($(row).find("td").get(1)).html((index + 1) + ".");
-            stream = findStreamByName(window.selected, $($(row).find("td").get(3)).html());
-            orderedSelected.push(stream);
-        });
-        // reorder window.selected too
-        window.selected = orderedSelected;
+        if (table == "selectedContent") {
+            orderedSelected = [];
+            $("#"+table+" tbody tr").each(function(index, row) {
+                $($(row).find("td").get(1)).html((index + 1));
+                stream = findStreamByName(window.selected, $($(row).find("td").get(3)).html());
+                orderedSelected.push(stream);
+            });
+            // reorder window.selected too
+            window.selected = orderedSelected;    
+        } else if (table == "sourceTable") {
+            $("#"+table+" tbody tr").each(function(index, row) {
+                $($(row).find("td").get(0)).html((index + 1));
+            });
+        }
     };
     window.onFiltering = function(table, term) {
         $("#"+table+" tbody tr").each(function(index, row) {
@@ -330,6 +336,7 @@ jQuery(function($) {
     // TODO: picture cache
     // TODO: tvg_language and tvg_country support
     // TODO: docker version
+    // TODO: add check on copy URL
 
     // clicking the Delete button should delete the row and resync ordering information
     $("#sourceTable tbody tr button.btn-danger").click(function(e) {
@@ -418,7 +425,6 @@ jQuery(function($) {
             modal.modal('toggle'); //or  $('#IDModal').modal('hide');
             //console.log(name+" / "+url);
             var row = $('<tr id="'+name+'">' + 
-                '<td style="max-width: 10px"><span class="glyphicon glyphicon-menu-hamburger" style="color:#bbb; cursor:move;"></span></td>' + 
                 '<td style="max-width: 20px"></td>' + 
                 '<td>' + name + '</td>' + 
                 '<td>...</td>' + 

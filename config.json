@@ -122,6 +122,27 @@
             "group": "France",
             "order": 3,
             "title": "IPTV.org - FR"
+        },
+        {
+            "url": "https:\/\/raw.githubusercontent.com\/Free-TV\/IPTV\/master\/playlist.m3u8",
+            "title": "Free TV GitHub",
+            "remove": [
+                "LN24",
+                "BFM TV",
+                "LCI",
+                "MTV Germany",
+                "Explorer HD Channel",
+                "ITV 4 \u24c8",
+                "BBC Food",
+                "Drybar Comedy",
+                "FilmRise Sci-Fi",
+                "Pluto TV Fantastic",
+                "BBC World Service"
+            ]
+        },
+        {
+            "url": "https:\/\/iptv-org.github.io\/iptv\/countries\/fr.m3u",
+            "title": "France"
         }
     ]
 }
