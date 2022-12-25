@@ -1,5 +1,14 @@
 [
     {
+        "tvg_id": "bbc-world-news",
+        "name": "BBC World News",
+        "tvg_logo": "https:\/\/i.imgur.com\/joD38lo.png",
+        "url": "http:\/\/ott-cdn.ucom.am\/s24\/index.m3u8",
+        "tvg_language": null,
+        "tvg_country": null,
+        "group_title": "News"
+    },
+    {
         "tvg_id": "CNN.us",
         "name": "CNN",
         "tvg_logo": "https:\/\/i.imgur.com\/vyrc1I1.png",
@@ -36,28 +45,10 @@
         "group_title": "News"
     },
     {
-        "tvg_id": "mjh-7-btv",
-        "name": "Bloomberg Tv",
-        "tvg_logo": "https:\/\/i.imgur.com\/OuogLHx.png",
-        "url": "https:\/\/i.mjh.nz\/7-btv.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "News"
-    },
-    {
         "tvg_id": "BloombergTVEurope.uk",
         "name": "Bloomberg TV Europe",
         "tvg_logo": "https:\/\/i.imgur.com\/OuogLHx.png",
         "url": "https:\/\/bloomberg.com\/media-manifest\/streams\/eu.m3u8",
-        "tvg_language": null,
-        "tvg_country": null,
-        "group_title": "News"
-    },
-    {
-        "tvg_id": "bbc-world-news",
-        "name": "BBC World News",
-        "tvg_logo": "https:\/\/i.imgur.com\/joD38lo.png",
-        "url": "http:\/\/ott-cdn.ucom.am\/s24\/index.m3u8",
         "tvg_language": null,
         "tvg_country": null,
         "group_title": "News"
