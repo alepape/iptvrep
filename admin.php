@@ -139,6 +139,10 @@ $configdata = json_decode($configjson, true);
                         <label for="streamgrp" class="col-form-label">Group:</label>
                         <input type="text" class="form-control" id="streamgrp">
                     </div>
+                    <div class="form-group">
+                        <label for="streamopts" class="col-form-label">Options:</label>
+                        <textarea rows="3" class="form-control" id="streamopts"></textarea>
+                    </div>
                     </form>
                 </div>
                 <div style="float: right; margin-top: 20px">

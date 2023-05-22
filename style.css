@@ -21,6 +21,10 @@
         background-color: #bde9c2;
     }
 
+    .hasOptions {
+        color: darkblue;
+    }
+
     .badRow {
         background-color: #e9bdbd;
     }

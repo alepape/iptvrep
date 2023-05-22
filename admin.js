@@ -70,6 +70,10 @@ jQuery(function($) {
                 const stream = streams[index];
                 row = $('<tr></tr>');
                 row.append($('<td>'+imgTag(stream.tvg_logo)+'</td><td class="name">'+stream.name+'</td><td class="url">'+stream.url+'</td><td><button type="button" class="btn btn-sm btn-info"><i class="bi bi-clipboard"></i></button></td>'));
+                // check if opts
+                if (stream.opts && (stream.opts.length > 0)) {
+                    row.addClass("hasOptions");
+                }
                 // check if bad
                 if (bad.includes(stream.name)) {
                     row.addClass("badRow");
@@ -77,7 +81,6 @@ jQuery(function($) {
                 } else {
                     row.append($('<td><button type="button" class="btn btn-sm btn-danger">Bad</button></td>'));
                 }
-
                 if (findStreamByURL(window.selected, stream.url) || bad.includes(stream.name)) {
                     //console.log(stream.name+" already in selected")
                     row.append($('<td style="text-align: center;">-</td>'));
@@ -241,6 +244,18 @@ jQuery(function($) {
             updateStreamTable(e.target.parentElement.id);
         });
     }
+    var showOptions = function(array) {
+        var opts = "";
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            opts += element + "\n";
+        }
+        return opts;
+    }
+    var readOptions = function(textarea) {
+        const arr = textarea.split('\n').filter(element => element);
+        return arr;
+    }
     var loadDetails = function(stream) {
         window.current = stream;
         $('#streamid').val(stream.tvg_id);
@@ -249,6 +264,7 @@ jQuery(function($) {
         $('#streamlogourl').attr("src",stream.tvg_logo);
         $('#streamurl').val(stream.url);
         $('#streamgrp').val(stream.group_title);
+        $('#streamopts').val(showOptions(stream.opts));
     }
     var initRowReordering = function(row) {
         $(row).css("cursor", "move");
@@ -387,6 +403,11 @@ jQuery(function($) {
         stream.tvg_logo = $('#streamlogo').val();
         stream.url = $('#streamurl').val();
         stream.group_title = $('#streamgrp').val();
+        if ($('#streamopts').val() != "") {
+            stream.opts = readOptions($('#streamopts').val());
+        } else if (stream.opts || (stream.opts.length == 0)) {
+            delete stream.opts;
+        }
 
         var settings = {
             "url": "./save.php?m=output",
