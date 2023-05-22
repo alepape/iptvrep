@@ -1,6 +1,7 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE);
-ini_set('display_errors', 'On');
+// error_reporting(E_ALL & ~E_NOTICE);
+// ini_set('display_errors', 'On');
+ini_set("pcre.jit", "0");
 
 class Channel {
 
@@ -11,6 +12,7 @@ class Channel {
     public $tvg_language;
     public $tvg_country;
     public $group_title;
+    public $opts;
 
     public function __construct($group) {
         $this->tvg_id = '';
@@ -24,11 +26,17 @@ class Channel {
         // } else {
         //   $this->group_title = '';
         // }
+        $this->opts = [];
         $this->group_title = $group;
     }
 
     public function toString() {
         $line1 = '#EXTINF:-1 tvg-id="'.$this->tvg_id.'" tvg-language="'.$this->tvg_language.'" tvg-logo="'.$this->tvg_logo.'" tvg-country="'.$this->tvg_country.'" group-title="'.$this->group_title.'",'.$this->name."\n";
+        if (count($this->opts) > 0) {
+            foreach ($this->opts as $opt) {
+                $line1 = $line1 . "#EXTVLCOPT:" . $opt . "\n";
+            }
+        }
         $line2 = $this->url . "\n";
         return $line1 . $line2;
     }
@@ -46,26 +54,65 @@ class Channel {
         $this->url = $obj['url'];
         $this->tvg_language = $obj['tvg_language'];
         $this->tvg_country = $obj['tvg_country'];
+        if (array_key_exists('opts', $obj)) {
+            $this->opts = $obj['opts']; 
+        } else {
+            $this->opts = [];
+        }
     }
 
     public function toJSON() {
         return json_encode(get_object_vars($this));
     }
 
-    public function parseLines($line1, $line2) {
-        if (!(substr( $line2, 0, 4 ) === "#EXTVLCOPT:")) {
+    public function parseLines($line1, $line2, $line3 = "") {
+        if (!(substr( $line2, 0, 11 ) === "#EXTVLCOPT:")) { 
             $this->url = $line2;
+        } else {
+            $this->url = $line3;
+            $this->opts = substr($line2, 11);
         }
         $parsed = extinfString2Array($line1);
         $this->name = $parsed['name'];
         $this->tvg_id = $parsed['tvg-id'];
         $this->tvg_logo = $parsed['tvg-logo'];
-        $this->tvg_language = $parsed['tvg-language'];
-        $this->tvg_country = $parsed['tvg-country'];
+        if (array_key_exists('tvg-language', $parsed)) {
+            $this->tvg_language = $parsed['tvg-language'];
+        }
+        if (array_key_exists('tvg-country', $parsed)) {
+            $this->tvg_country = $parsed['tvg-country'];
+        }
         if ($parsed['group-title'] != '') {
             $this->group_title = $parsed['group-title'];
         } 
     }
+
+    public function cleverParseLines($index, $array) {
+        // parse the first line
+        $parsed = extinfString2Array($array[$index]);
+        $this->name = $parsed['name'];
+        $this->tvg_id = $parsed['tvg-id'];
+        $this->tvg_logo = $parsed['tvg-logo'];
+        if (array_key_exists('tvg-language', $parsed)) {
+            $this->tvg_language = $parsed['tvg-language'];
+        }
+        if (array_key_exists('tvg-country', $parsed)) {
+            $this->tvg_country = $parsed['tvg-country'];
+        }
+        if ($parsed['group-title'] != '') {
+            $this->group_title = $parsed['group-title'];
+        } 
+        // then, check for options and determine the URL index
+        $opts = [];
+        $smallindex = $index + 1;
+        while ((substr( $array[$smallindex], 0, 11 ) === "#EXTVLCOPT:")) { 
+            $opts[] = substr($array[$smallindex], 11);
+            $smallindex++;
+        }
+        $this->opts = $opts;
+        $this->url = $array[$smallindex];
+    }
+    
 }
 
 function extinfString2Array($string) {
@@ -209,7 +256,8 @@ function local_src($config, $mode) {
             $line = $std_array[$x];
             if (strpos($line, '#EXTINF:') === 0) {
                 $channel = new Channel($config['title']);
-                $channel->parseLines($line, $std_array[$x+1]);
+                // $channel->parseLines($line, $std_array[$x+1], $std_array[$x+2]);
+                $channel->cleverParseLines($x, $std_array);
                 $cleaned_output .= $channel->toString();
             }
         }
@@ -223,7 +271,8 @@ function local_src($config, $mode) {
             $line = $std_array[$x];
             if (strpos($line, '#EXTINF:') === 0) {
                 $channel = new Channel($config['title']);
-                $channel->parseLines($line, $std_array[$x+1]);
+                // $channel->parseLines($line, $std_array[$x+1], $std_array[$x+2]);
+                $channel->cleverParseLines($x, $std_array);
                 $cleaned_output .= $channel->toJSON().",";
             }
         }
@@ -272,7 +321,8 @@ function remote_src($config, $mode) {
                 } else {
                     $channel = new Channel('');
                 }
-                $channel->parseLines($line, $std_array[$x+1]);
+                // $channel->parseLines($line, $std_array[$x+1], $std_array[$x+2]);
+                $channel->cleverParseLines($x, $std_array);
                 $cleaned_output .= $channel->toString();
             }
         }
@@ -285,7 +335,8 @@ function remote_src($config, $mode) {
             $line = $std_array[$x];
             if (strpos($line, '#EXTINF:') === 0) {
                 $channel = new Channel($config['title']);
-                $channel->parseLines($line, $std_array[$x+1]);
+                // $channel->parseLines($line, $std_array[$x+1], $std_array[$x+2]);
+                $channel->cleverParseLines($x, $std_array);
                 $cleaned_output .= $channel->toJSON().",";
             }
         }
