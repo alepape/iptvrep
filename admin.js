@@ -246,9 +246,11 @@ jQuery(function($) {
     }
     var showOptions = function(array) {
         var opts = "";
-        for (let index = 0; index < array.length; index++) {
-            const element = array[index];
-            opts += element + "\n";
+        if (array) {
+            for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                opts += element + "\n";
+            }    
         }
         return opts;
     }
