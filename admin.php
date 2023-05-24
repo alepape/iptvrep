@@ -13,6 +13,7 @@ $configdata = json_decode($configjson, true);
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>IPTV sources manager</title>
   
   <!-- jQuery and Shield UI includes -->
