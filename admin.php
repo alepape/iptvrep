@@ -27,7 +27,7 @@ $configdata = json_decode($configjson, true);
   
   <link rel="stylesheet" href="./style.css">
   <script>
-        window.config = JSON.parse('<?=json_encode($configdata)?>');
+        window.config = JSON.parse('<?=json_encode($configdata)?>'); // TODO: protect from special chars in channel names
   </script>
 </head>
 <body>

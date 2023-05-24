@@ -333,6 +333,15 @@
         "group_title": "Entertainment"
     },
     {
+        "tvg_id": "13emerue",
+        "name": "13eme Rue",
+        "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/0c\/Logo_of_13e_Rue.png",
+        "url": "http:\/\/gratuittv.free.fr\/Files\/13emerue\/live\/playlist.m3u8",
+        "tvg_language": "",
+        "tvg_country": "",
+        "group_title": "Entertainment"
+    },
+    {
         "tvg_id": "parispremier",
         "name": "Paris Premiere",
         "tvg_logo": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/thumb\/d\/d1\/Paris_Premi%C3%A8re_2011.svg\/1024px-Paris_Premi%C3%A8re_2011.svg.png",

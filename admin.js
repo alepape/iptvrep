@@ -44,9 +44,11 @@ jQuery(function($) {
             window.selected = filtered;
             refreshSelectedTable(filtered);
         });
-        $("#selectedContent tbody tr button.btn-info").click(function() {
+        $("#selectedContent tbody tr button.btn-info").click(function(event) {
+            console.log("that's it");
             url = $(this.parentNode.parentNode).find('td.url').html();
             copyToClipboard(url);
+            event.stopPropagation();
         });
     }
     var updateStreamTable = function(id) {
