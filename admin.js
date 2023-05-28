@@ -27,7 +27,7 @@ jQuery(function($) {
         //streams = response;
         for (let index = 0; index < streams.length; index++) {
             const stream = streams[index];
-            row = $('<tr><td><span class="glyphicon glyphicon-menu-hamburger" style="color:#bbb; cursor:move;"></span></td><td>'+(index+1)+'</td><td>'+imgTag(stream.tvg_logo)+'</td><td class="name">'+stream.name+'</td><td class="url">'+stream.url+'</td><td>'+stream.group_title+'</td><td><button type="button" class="btn btn-sm btn-info"><i class="bi bi-clipboard"></i></button><td><button type="button" class="btn btn-sm btn-danger">Remove</button></td></tr>');
+            row = $('<tr><td><span class="glyphicon glyphicon-menu-hamburger" style="color:#bbb; cursor:move;"></span></td><td>'+(index+1)+'</td><td>'+imgTag(stream.tvg_logo)+'</td><td class="name">'+stream.name+'</td><td class="url">'+stream.url+'</td><td>'+stream.group_title+'</td><td><button type="button" class="btn btn-sm btn-success"><i class="bi bi-link-45deg"></i></button></td><td><button type="button" class="btn btn-sm btn-info"><i class="bi bi-clipboard"></i></button></td><td><button type="button" class="btn btn-sm btn-danger">Remove</button></td></tr>');
             $("#selectedContent").find('tbody').append(row);
         }
         $('#outputDiv h3').html("Selected - "+streams.length+" streams");
@@ -50,6 +50,14 @@ jQuery(function($) {
             copyToClipboard(url);
             event.stopPropagation();
         });
+        $("#selectedContent tbody tr button.btn-success").click(function(event) {
+            url = $(this.parentNode.parentNode).find('td.url').html();
+            window.open(url, '_blank');
+            event.stopPropagation();
+        });
+    }
+    var link = function(url) {
+        return "<a href='"+url+"' target=blank>&#127760;</a>";
     }
     var updateStreamTable = function(id) {
         $('body').addClass("wait");
@@ -356,7 +364,9 @@ jQuery(function($) {
     // TODO: picture cache
     // TODO: tvg_language and tvg_country support
     // TODO: docker version
-    // TODO: add check on copy URL
+    // TODO: add check on copy URL <= ???
+    // TODO: add open link - will work on ipad, even if not on mac
+    // TODO: add "send to top" in selected section
 
     // clicking the Delete button should delete the row and resync ordering information
     $("#sourceTable tbody tr button.btn-danger").click(function(e) {
